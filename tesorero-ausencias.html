@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ausencias prolongadas — Tesorero</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="tesorero.html">&larr; Tesorero</a>
+  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">2</span></a>
+</header>
+<main>
+  <h1>Listado de socios con ausencias prolongadas <span class="tag-hu">HU 17</span></h1>
+  <p class="note">Socios con 5 o más ausencias consecutivas sin justificar. Un socio que vuelve a entrenar desaparece del listado.</p>
+  <table>
+    <tr><th>Nombre y apellido</th><th>Documento</th><th>Disciplina / Categoría</th><th>Ausencias consecutivas</th><th>Última asistencia</th><th></th></tr>
+    <tr>
+      <td>Tomás Ibáñez</td><td>DNI 43567890</td><td>Handball — Cadetes</td><td>5</td><td>08/09/2026</td>
+      <td><a class="btn outline" href="#">Dar de baja seguro</a></td>
+    </tr>
+  </table>
+  <hr class="section-divider">
+  <h2>Registro de baja de seguro por inactividad <span class="tag-hu">HU 16</span></h2>
+  <div class="card">
+    <p><strong>Tomás Ibáñez</strong> — DNI 43567890 — Seguro POL-2026-00450 (vigente)</p>
+    <form>
+      <div class="field" style="max-width:260px;"><label>Fecha de baja</label><input type="text" value="18/09/2026"></div>
+      <div class="btn-row">
+        <button class="btn" type="button">Registrar baja</button>
+      </div>
+    </form>
+    <p class="note">La gestión ante la aseguradora se realiza por fuera del sistema; acá solo se registra el resultado.</p>
+  </div>
+</main>
+<footer class="footnote">Club RN — mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

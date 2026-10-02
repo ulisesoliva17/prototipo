@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registrar socio potencial — Profesor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="profesor.html">&larr; Profesor</a>
+  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">1</span></a>
+</header>
+<main>
+  <h1>Registro de socio potencial y envío de link <span class="tag-hu">HU 9</span></h1>
+  <form>
+    <div class="grid-2">
+      <div class="field"><label>Tipo y número de documento</label><input type="text" placeholder="DNI 48001122"></div>
+      <div class="field"><label>Nombre y apellido</label><input type="text" placeholder="Nuevo jugador"></div>
+      <div class="field"><label>Contacto (teléfono o mail)</label><input type="text" placeholder="mail@ejemplo.com"></div>
+      <div class="field">
+        <label>Disciplina</label>
+        <select><option>Handball</option><option>Vóley</option><option>Vóley y Handball</option></select>
+      </div>
+    </div>
+    <div class="btn-row">
+      <button class="btn" type="button">Registrar y enviar link</button>
+    </div>
+  </form>
+  <p class="note">El sistema crea el registro en estado "socio potencial", envía el enlace de registro al contacto y notifica a la Administrativa general.</p>
+</main>
+<footer class="footnote">Club RN — mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

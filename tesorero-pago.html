@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registro de pago — Tesorero</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="tesorero.html">&larr; Tesorero</a>
+  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">2</span></a>
+</header>
+<main>
+  <h1>Registro de pago de cuota <span class="tag-hu">HU 14</span></h1>
+  <div class="field">
+    <label>Buscar socio por documento o nombre y apellido</label>
+    <input type="text" value="Julieta Ríos">
+  </div>
+  <div class="card">
+    <p><strong>Julieta Ríos</strong> — DNI 45102233</p>
+    <h2 style="margin-top:8px;">Cuotas sin saldar</h2>
+    <table>
+      <tr><th>Período</th><th>Monto</th><th></th></tr>
+      <tr><td>Septiembre 2026</td><td>$ 18.000</td><td><a class="btn outline" href="#">Registrar pago</a></td></tr>
+    </table>
+  </div>
+  <form>
+    <h2>Datos del pago</h2>
+    <div class="grid-2">
+      <div class="field"><label>Fecha</label><input type="text" value="18/09/2026"></div>
+      <div class="field"><label>Monto pagado</label><input type="text" value="18000"></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn" type="button">Confirmar pago</button>
+    </div>
+  </form>
+  <p class="note">Un pago cancela la cuota entera; el sistema no admite pagos parciales.</p>
+</main>
+<footer class="footnote">Club RN — mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

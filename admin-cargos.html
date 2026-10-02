@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Cargos administrativos — Administrativa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="administrativa.html">&larr; Administrativa general</a>
+  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">3</span></a>
+</header>
+<main>
+  <h1>Gestión de cargos administrativos <span class="tag-hu">HU 20</span></h1>
+  <form>
+    <div class="grid-2">
+      <div class="field">
+        <label>Socio</label>
+        <select><option>Mica Herrera</option><option>Tomás Ibáñez</option></select>
+      </div>
+      <div class="field">
+        <label>Cargo</label>
+        <select><option>Tesorero</option><option>Recepcionista</option><option>Administrativo General</option></select>
+      </div>
+      <div class="field"><label>Fecha de inicio</label><input type="text" value="01/03/2026"></div>
+      <div class="field"><label>Fecha de finalización</label><input type="text" value="28/02/2027"></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn" type="button">Asignar cargo</button>
+    </div>
+  </form>
+  <h2>Cargos vigentes</h2>
+  <table>
+    <tr><th>Socio</th><th>Cargo</th><th>Desde</th><th>Hasta</th></tr>
+    <tr><td>Mica Herrera</td><td>Tesorero</td><td>01/03/2026</td><td>28/02/2027</td></tr>
+    <tr><td>Franco Gómez</td><td>Recepcionista</td><td>01/06/2026</td><td>31/05/2027</td></tr>
+  </table>
+</main>
+<footer class="footnote">Club RN — mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

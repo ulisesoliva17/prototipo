@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Planilla de asistencia — Profesor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="profesor-clases.html">&larr; Mis clases de hoy</a>
+  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">1</span></a>
+</header>
+<main>
+  <h1>Planilla de asistencia <span class="tag-hu">HU 18</span></h1>
+  <p class="note">Handball — Cadetes · 18/09/2026 · 18:00 – 19:30. Se muestran únicamente los socios de esta categoría.</p>
+  <table>
+    <tr><th>Nombre y apellido</th><th>Habilitado</th><th>Presente</th><th>Ausente</th><th>Ausente justificado</th></tr>
+    <tr>
+      <td>Mica Herrera</td>
+      <td><span class="badge ok">Sí</span></td>
+      <td><input type="radio" name="a1" checked></td>
+      <td><input type="radio" name="a1"></td>
+      <td><input type="radio" name="a1"></td>
+    </tr>
+    <tr>
+      <td>Tomás Ibáñez</td>
+      <td><span class="badge ok">Sí</span></td>
+      <td><input type="radio" name="a2"></td>
+      <td><input type="radio" name="a2"></td>
+      <td><input type="radio" name="a2" checked></td>
+    </tr>
+    <tr>
+      <td>Bruno Farías</td>
+      <td><span class="badge warn">No — dictamen no apto</span></td>
+      <td><input type="radio" name="a3" disabled></td>
+      <td><input type="radio" name="a3" checked disabled></td>
+      <td><input type="radio" name="a3" disabled></td>
+    </tr>
+  </table>
+  <div class="btn-row">
+    <button class="btn" type="button">Guardar planilla</button>
+  </div>
+  <p class="note">La ausencia justificada cubre casos como el préstamo a otra institución. Una ausencia sin justificar incrementa el contador de ausencias consecutivas del socio; una presencia o ausencia justificada lo reinicia.</p>
+</main>
+<footer class="footnote">Club RN — mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

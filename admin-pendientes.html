@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pendientes de alta — Administrativa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="administrativa.html">&larr; Administrativa general</a>
+  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">3</span></a>
+</header>
+<main>
+  <h1>Listado de socios pendientes de alta <span class="tag-hu">HU 10</span></h1>
+  <p class="note">Consulta calculada en el momento. Incluye registros en estado "socio potencial" y "pendiente de alta".</p>
+  <table>
+    <tr><th>Nombre y apellido</th><th>Contacto</th><th>Disciplina</th><th>Registrado el</th><th>Estado</th><th></th></tr>
+    <tr>
+      <td>Franco Gómez</td><td>franco.gomez@mail.com</td><td>Vóley</td><td>10/09/2026</td>
+      <td><span class="badge warn">Pendiente de alta</span></td>
+      <td><a class="btn outline" href="admin-confirmacion.html">Revisar</a></td>
+    </tr>
+    <tr>
+      <td>Mica Herrera</td><td>1155-443322</td><td>Handball</td><td>15/09/2026</td>
+      <td><span class="badge warn">Socio potencial</span></td>
+      <td><a class="btn outline" href="admin-confirmacion.html">Revisar</a></td>
+    </tr>
+    <tr>
+      <td>Tomás Ibáñez</td><td>tomas.ibanez@mail.com</td><td>Vóley y Handball</td><td>16/09/2026</td>
+      <td><span class="badge warn">Pendiente de alta</span></td>
+      <td><a class="btn outline" href="admin-confirmacion.html">Revisar</a></td>
+    </tr>
+  </table>
+</main>
+<footer class="footnote">Club RN — mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Programación de clases — Administrativa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="administrativa.html">&larr; Administrativa general</a>
+  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">3</span></a>
+</header>
+<main>
+  <h1>Programación de clases <span class="tag-hu">HU 27</span></h1>
+  <form>
+    <div class="grid-2">
+      <div class="field">
+        <label>Categoría</label>
+        <select><option>Handball — Cadetes</option><option>Vóley — Juveniles</option></select>
+      </div>
+      <div class="field"><label>Fecha</label><input type="text" value="21/09/2026"></div>
+      <div class="field"><label>Hora de inicio</label><input type="text" value="18:00"></div>
+      <div class="field"><label>Hora de fin</label><input type="text" value="19:30"></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn" type="button">Programar clase</button>
+    </div>
+  </form>
+  <h2>Clases programadas — Handball Cadetes</h2>
+  <table>
+    <tr><th>Fecha</th><th>Horario</th><th>Estado</th></tr>
+    <tr><td>21/09/2026</td><td>18:00 – 19:30</td><td><span class="badge">Programada</span></td></tr>
+    <tr><td>18/09/2026</td><td>18:00 – 19:30</td><td><span class="badge ok">Con asistencia tomada</span></td></tr>
+  </table>
+</main>
+<footer class="footnote">Club RN — mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

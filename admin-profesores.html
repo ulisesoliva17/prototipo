@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Profesores — Administrativa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="administrativa.html">&larr; Administrativa general</a>
+  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">3</span></a>
+</header>
+<main>
+  <h1>Alta de profesor <span class="tag-hu">HU 25</span></h1>
+  <form>
+    <div class="grid-2">
+      <div class="field"><label>Tipo y número de documento</label><input type="text" value="DNI 32778899"></div>
+      <div class="field"><label>Fecha de ingreso</label><input type="text" value="01/03/2026"></div>
+      <div class="field"><label>Nombre y apellido</label><input type="text" value="Diego Sosa"></div>
+      <div class="field"><label>Teléfono</label><input type="text" value="1166-334455"></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn" type="button">Dar de alta</button>
+    </div>
+  </form>
+  <hr class="section-divider">
+  <h1>Asignación de profesor a categoría <span class="tag-hu">HU 26</span></h1>
+  <form>
+    <div class="grid-2">
+      <div class="field">
+        <label>Categoría</label>
+        <select><option>Handball — Cadetes</option><option>Vóley — Juveniles</option></select>
+      </div>
+      <div class="field">
+        <label>Profesor</label>
+        <select><option>Diego Sosa</option><option>Carla Núñez</option></select>
+      </div>
+      <div class="field">
+        <label>Rol en la categoría</label>
+        <select><option>Director técnico</option><option>Preparador físico</option></select>
+      </div>
+    </div>
+    <div class="btn-row">
+      <button class="btn" type="button">Asignar</button>
+    </div>
+  </form>
+  <h2>Profesores asignados a Handball — Cadetes</h2>
+  <table>
+    <tr><th>Profesor</th><th>Rol</th></tr>
+    <tr><td>Diego Sosa</td><td>Director técnico</td></tr>
+    <tr><td>Carla Núñez</td><td>Preparador físico</td></tr>
+  </table>
+</main>
+<footer class="footnote">Club RN — mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

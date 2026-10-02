@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carga de certificado médico — Administrativa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="administrativa.html">&larr; Administrativa general</a>
+  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">3</span></a>
+</header>
+<main>
+  <h1>Carga de certificado médico <span class="tag-hu">HU 5</span></h1>
+  <div class="field">
+    <label>Buscar socio por documento o nombre y apellido</label>
+    <input type="text" value="Mica Herrera">
+  </div>
+  <div class="card">
+    <p><strong>Mica Herrera</strong> — DNI 41987654</p>
+    <p>Handball — Juveniles</p>
+  </div>
+  <form>
+    <div class="grid-2">
+      <div class="field">
+        <label>Fecha de emisión</label>
+        <input type="text" value="01/09/2026">
+      </div>
+      <div class="field">
+        <label>Fecha de vencimiento</label>
+        <input type="text" value="01/09/2027">
+      </div>
+    </div>
+    <div class="field">
+      <label>Dictamen</label>
+      <select><option>Apto</option><option>No apto</option></select>
+    </div>
+    <h2>Médico que emite el certificado</h2>
+    <div class="grid-2">
+      <div class="field"><label>Matrícula</label><input type="text" value="MP 12345"></div>
+      <div class="field"><label>Nombre y apellido</label><input type="text" value="Dr. Raúl Peña"></div>
+      <div class="field"><label>Teléfono</label><input type="text" value="1144-556677"></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn" type="button">Guardar certificado</button>
+      <a class="btn outline" href="administrativa.html">Cancelar</a>
+    </div>
+  </form>
+  <p class="note">Al guardar, el sistema recalcula la habilitación del socio para entrenar (HU 6).</p>
+</main>
+<footer class="footnote">Club RN — mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

@@ -2,37 +2,23 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Mis clases de hoy, Profesor</title>
+<title>Mis clases, Club RN</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
   <a class="back-link" href="profesor.html">&larr; Profesor</a>
-  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">1</span></a>
+  <a class="notif-link" href="notificaciones-profesor.html">Notificaciones</a>
 </header>
 <main>
-  <div class="role-select">
-    <a class="role-btn" href="profesor-clases-voley-infantiles.html">Vóley</a>
-    <span class="role-btn btn">Handball</span>
-  </div>
-  <div class="role-select">
-    <span class="role-btn btn">Cadetes</span>
-    <a class="role-btn" href="profesor-clases-handball-juveniles.html">Juveniles</a>
-  </div>
-  <h1>Mis clases de hoy <span class="tag-hu">HU 18</span></h1>
-  <p class="note">Prof. Diego Sosa, clases de Handball Cadetes a cargo, programadas según HU 27.</p>
+  <h1>Mis clases</h1>
+  <p class="note">Prof. Diego Sosa. Se muestran las clases de los horarios en los que tiene una asignación vigente. Si tiene más de una clase en el día, aparecen todas.</p>
   <table>
-    <tr><th>Fecha</th><th>Horario</th><th>Estado</th><th></th></tr>
-    <tr>
-      <td>18/09/2026</td><td>18:00 – 19:30</td>
-      <td><span class="badge warn">Sin asistencia tomada</span></td>
-      <td><a class="btn outline" href="profesor-asistencia.html">Tomar asistencia</a></td>
-    </tr>
-    <tr>
-      <td>16/09/2026</td><td>18:00 – 19:30</td>
-      <td><span class="badge ok">Asistencia tomada</span></td>
-      <td><a class="btn outline" href="profesor-asistencia.html">Ver planilla</a></td>
-    </tr>
+    <tr><th>Horario</th><th>Fecha</th><th>Estado</th><th></th></tr>
+    <tr><td>Handball Cadetes, viernes 18:00 a 19:30</td><td>18/09/2026 (hoy)</td><td><span class="badge warn">Sin asistencia tomada</span></td><td><a class="btn outline" href="profesor-asistencia.html">Tomar asistencia</a></td></tr>
+    <tr><td>Handball Juveniles, viernes 19:30 a 21:00</td><td>18/09/2026 (hoy)</td><td><span class="badge warn">Sin asistencia tomada</span></td><td><a class="btn outline" href="profesor-asistencia-handball-juveniles.html">Tomar asistencia</a></td></tr>
+    <tr><td>Vóley Infantiles, jueves 17:00 a 18:30</td><td>17/09/2026</td><td><span class="badge warn">Sin asistencia tomada</span></td><td><a class="btn outline" href="profesor-asistencia-voley-infantiles.html">Tomar asistencia</a></td></tr>
+    <tr><td>Handball Cadetes, miércoles 18:00 a 19:30</td><td>16/09/2026</td><td><span class="badge ok">Asistencia tomada</span></td><td><a class="btn outline" href="profesor-asistencia-handball-miercoles.html">Ver planilla</a></td></tr>
   </table>
 </main>
 <footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>

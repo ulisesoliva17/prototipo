@@ -2,36 +2,49 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Programación de clases, Administrativa</title>
+<title>Horarios y clases, Club RN</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
   <a class="back-link" href="administrativa.html">&larr; Administrativa general</a>
-  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">3</span></a>
+  <a class="notif-link" href="notificaciones-admin.html">Notificaciones <span class="unread-count">2</span></a>
 </header>
 <main>
-  <h1>Programación de clases <span class="tag-hu">HU 27</span></h1>
+  <h1>Horarios y clases</h1>
+  <h2>Nuevo horario</h2>
   <form>
     <div class="grid-2">
-      <div class="field">
-        <label>Categoría</label>
-        <select><option>Handball Cadetes</option><option>Vóley Juveniles</option></select>
-      </div>
-      <div class="field"><label>Fecha</label><input type="text" value="21/09/2026"></div>
+      <div class="field"><label>Categoría</label><select><option>Vóley Cadetes</option><option>Vóley Infantiles</option><option>Vóley Juveniles</option><option>Handball Cadetes</option><option>Handball Juveniles</option></select></div>
+      <div class="field"><label>Día de la semana</label><select><option>Lunes</option><option>Martes</option><option>Miércoles</option><option>Jueves</option><option>Viernes</option><option>Sábado</option></select></div>
       <div class="field"><label>Hora de inicio</label><input type="text" value="18:00"></div>
       <div class="field"><label>Hora de fin</label><input type="text" value="19:30"></div>
+      <div class="field"><label>Cupo</label><input type="text" value="18"></div>
     </div>
-    <div class="btn-row">
-      <button class="btn" type="button">Programar clase</button>
-    </div>
+    <div class="btn-row"><a class="btn" href="admin-ok-horario.html">Guardar horario</a></div>
   </form>
-  <h2>Clases programadas, Handball Cadetes</h2>
+  <h2>Horarios cargados</h2>
   <table>
-    <tr><th>Fecha</th><th>Horario</th><th>Estado</th></tr>
-    <tr><td>21/09/2026</td><td>18:00 – 19:30</td><td><span class="badge">Programada</span></td></tr>
-    <tr><td>18/09/2026</td><td>18:00 – 19:30</td><td><span class="badge ok">Con asistencia tomada</span></td></tr>
+    <tr><th>Categoría</th><th>Día y horario</th><th>Cupo</th><th>Inscriptos</th></tr>
+    <tr><td>Vóley Cadetes</td><td>Martes 18:00 a 19:30</td><td>18</td><td>18 <span class="badge">Lleno</span></td></tr>
+    <tr><td>Vóley Cadetes</td><td>Jueves 18:00 a 19:30</td><td>18</td><td>12</td></tr>
+    <tr><td>Vóley Infantiles</td><td>Jueves 17:00 a 18:30</td><td>16</td><td>10</td></tr>
+    <tr><td>Vóley Juveniles</td><td>Martes 19:30 a 21:00</td><td>18</td><td>7</td></tr>
+    <tr><td>Vóley Juveniles</td><td>Jueves 19:30 a 21:00</td><td>18</td><td>18 <span class="badge">Lleno</span></td></tr>
+    <tr><td>Handball Cadetes</td><td>Miércoles 18:00 a 19:30</td><td>20</td><td>14</td></tr>
+    <tr><td>Handball Cadetes</td><td>Viernes 18:00 a 19:30</td><td>20</td><td>20 <span class="badge">Lleno</span></td></tr>
+    <tr><td>Handball Juveniles</td><td>Viernes 19:30 a 21:00</td><td>20</td><td>11</td></tr>
   </table>
+  <h2>Clases generadas de septiembre, Handball Cadetes miércoles 18:00 a 19:30</h2>
+  <table>
+    <tr><th>Fecha</th><th>Estado</th><th></th></tr>
+    <tr><td>02/09/2026</td><td><span class="badge ok">Con asistencia tomada</span></td><td></td></tr>
+    <tr><td>09/09/2026</td><td><span class="badge ok">Con asistencia tomada</span></td><td></td></tr>
+    <tr><td>16/09/2026</td><td><span class="badge ok">Con asistencia tomada</span></td><td></td></tr>
+    <tr><td>23/09/2026</td><td><span class="badge">Programada</span></td><td><a class="btn outline" href="admin-ok-clase.html">Cancelar</a></td></tr>
+    <tr><td>30/09/2026</td><td><span class="badge">Programada</span></td><td><a class="btn outline" href="admin-ok-clase.html">Cancelar</a></td></tr>
+  </table>
+  <p class="note">Al abrir cada mes el sistema genera una clase por cada fecha que cae en el día de un horario. No conoce los feriados, así que esas clases se cancelan a mano mientras no tengan asistencia cargada. Si un horario cambia a mitad de mes, se regeneran las clases futuras sin asistencia.</p>
 </main>
 <footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>
 </body>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Disciplinas y categorías, Club RN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="administrativa.html">&larr; Administrativa general</a>
+  <a class="notif-link" href="notificaciones-admin.html">Notificaciones <span class="unread-count">2</span></a>
+</header>
+<main>
+  <h1>Disciplinas y categorías</h1>
+  <h2>Disciplinas</h2>
+  <table>
+    <tr><th>Disciplina</th><th>Categorías</th><th></th></tr>
+    <tr><td>Vóley</td><td>5</td><td><a class="btn outline" href="#">Editar</a></td></tr>
+    <tr><td>Handball</td><td>3</td><td><a class="btn outline" href="#">Editar</a></td></tr>
+  </table>
+  <form>
+    <div class="grid-2">
+      <div class="field"><label>Nueva disciplina</label><input type="text" value="Básquet"></div>
+    </div>
+    <div class="btn-row"><a class="btn" href="admin-ok-disciplina.html">Dar de alta</a></div>
+  </form>
+  <h2>Categorías de vóley</h2>
+  <table>
+    <tr><th>Categoría</th><th>Edad mínima</th><th>Edad máxima</th><th>Enfoque</th><th></th></tr>
+    <tr><td>Infantiles</td><td>11</td><td>12</td><td>Recreativo</td><td><a class="btn outline" href="#">Editar</a></td></tr>
+    <tr><td>Menores</td><td>13</td><td>14</td><td>Recreativo</td><td><a class="btn outline" href="#">Editar</a></td></tr>
+    <tr><td>Cadetes</td><td>15</td><td>16</td><td>Competitivo</td><td><a class="btn outline" href="#">Editar</a></td></tr>
+    <tr><td>Juveniles</td><td>17</td><td>18</td><td>Competitivo</td><td><a class="btn outline" href="#">Editar</a></td></tr>
+    <tr><td>Maxivóley</td><td>30</td><td>60</td><td>Recreativo</td><td><a class="btn outline" href="#">Editar</a></td></tr>
+  </table>
+  <h2>Nueva categoría</h2>
+  <form>
+    <div class="grid-2">
+      <div class="field"><label>Disciplina</label><select><option>Handball</option><option>Vóley</option></select></div>
+      <div class="field"><label>Nombre</label><input type="text" value="Menores"></div>
+      <div class="field"><label>Edad mínima</label><input type="text" value="13"></div>
+      <div class="field"><label>Edad máxima</label><input type="text" value="14"></div>
+      <div class="field"><label>Enfoque</label><select><option>Competitivo</option><option>Recreativo</option></select></div>
+    </div>
+    <div class="btn-row"><a class="btn" href="admin-ok-categoria.html">Dar de alta</a></div>
+  </form>
+  <p class="note">La edad que cuenta es la que el socio cumple en el año, así que todos cambian de categoría juntos al empezar el año. Una disciplina agrupa entre una y seis categorías. Los horarios se cargan en Horarios y clases y las tarifas las carga el Tesorero.</p>
+</main>
+<footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

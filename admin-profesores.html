@@ -2,54 +2,47 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Profesores, Administrativa</title>
+<title>Profesores, Club RN</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
   <a class="back-link" href="administrativa.html">&larr; Administrativa general</a>
-  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">3</span></a>
+  <a class="notif-link" href="notificaciones-admin.html">Notificaciones <span class="unread-count">2</span></a>
 </header>
 <main>
-  <h1>Alta de profesor <span class="tag-hu">HU 25</span></h1>
+  <h1>Alta de profesor</h1>
   <form>
     <div class="grid-2">
-      <div class="field"><label>Tipo y número de documento</label><input type="text" value="DNI 32778899"></div>
+      <div class="field"><label>Tipo de documento</label><select><option>DNI</option><option>Pasaporte</option></select></div>
+      <div class="field"><label>Número de documento</label><input type="text" value="32778899"></div>
       <div class="field"><label>Fecha de ingreso</label><input type="text" value="01/03/2026"></div>
       <div class="field"><label>Nombre y apellido</label><input type="text" value="Diego Sosa"></div>
       <div class="field"><label>Teléfono</label><input type="text" value="1166-334455"></div>
+      <div class="field"><label>Mail</label><input type="text" value="diego.sosa@mail.com"></div>
     </div>
-    <div class="btn-row">
-      <button class="btn" type="button">Dar de alta</button>
-    </div>
+    <div class="btn-row"><a class="btn" href="admin-ok-profesor.html">Dar de alta</a></div>
   </form>
+  <p class="note">Si la persona ya es socia del club, no se duplica y conserva su usuario y su contraseña.</p>
   <hr class="section-divider">
-  <h1>Asignación de profesor a categoría <span class="tag-hu">HU 26</span></h1>
+  <h1>Asignación de profesor a horario de categoría</h1>
   <form>
     <div class="grid-2">
-      <div class="field">
-        <label>Categoría</label>
-        <select><option>Handball Cadetes</option><option>Vóley Juveniles</option></select>
-      </div>
-      <div class="field">
-        <label>Profesor</label>
-        <select><option>Diego Sosa</option><option>Carla Núñez</option></select>
-      </div>
-      <div class="field">
-        <label>Rol en la categoría</label>
-        <select><option>Director técnico</option><option>Preparador físico</option></select>
-      </div>
+      <div class="field"><label>Horario</label><select><option>Handball Cadetes, miércoles 18:00 a 19:30</option><option>Handball Cadetes, viernes 18:00 a 19:30</option><option>Handball Juveniles, viernes 19:30 a 21:00</option><option>Vóley Infantiles, jueves 17:00 a 18:30</option><option>Vóley Cadetes, martes 18:00 a 19:30</option><option>Vóley Cadetes, jueves 18:00 a 19:30</option></select></div>
+      <div class="field"><label>Profesor</label><select><option>Carla Núñez</option><option>Diego Sosa</option></select></div>
+      <div class="field"><label>Rol en el horario</label><select><option>Preparador físico</option><option>Director técnico</option></select></div>
+      <div class="field"><label>Desde</label><input type="text" value="01/03/2026"></div>
+      <div class="field"><label>Hasta</label><input type="text" value="28/02/2027"></div>
     </div>
-    <div class="btn-row">
-      <button class="btn" type="button">Asignar</button>
-    </div>
+    <div class="btn-row"><a class="btn" href="admin-ok-asignacion.html">Asignar</a></div>
   </form>
-  <h2>Profesores asignados a Handball Cadetes</h2>
+  <h2>Profesores a cargo de Handball Cadetes, miércoles 18:00 a 19:30</h2>
   <table>
-    <tr><th>Profesor</th><th>Rol</th></tr>
-    <tr><td>Diego Sosa</td><td>Director técnico</td></tr>
-    <tr><td>Carla Núñez</td><td>Preparador físico</td></tr>
+    <tr><th>Profesor</th><th>Rol</th><th>Desde</th><th>Hasta</th></tr>
+    <tr><td>Diego Sosa</td><td>Director técnico</td><td>01/03/2026</td><td>28/02/2027</td></tr>
+    <tr><td>Carla Núñez</td><td>Preparador físico</td><td>01/03/2026</td><td>28/02/2027</td></tr>
   </table>
+  <p class="note">Un horario tiene uno o dos profesores a cargo, y no puede haber dos con el mismo rol al mismo tiempo. Una asignación terminada no se borra, se cierra.</p>
 </main>
 <footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>
 </body>

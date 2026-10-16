@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Planilla de asistencia, Club RN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="profesor-clases.html">&larr; Mis clases</a>
+  <a class="notif-link" href="notificaciones-profesor.html">Notificaciones</a>
+</header>
+<main>
+  <h1>Planilla de asistencia</h1>
+  <p class="note">Handball Cadetes, miércoles 16/09/2026, de 18:00 a 19:30. Se muestran los socios inscriptos en este horario.</p>
+  <p><span class="badge">Asistencia ya cargada</span> Se muestran las asistencias existentes para corregirlas.</p>
+  <table>
+    <tr><th>Nombre y apellido</th><th>Habilitado</th><th>Presente</th><th>Ausente</th><th>Ausente justificado</th></tr>
+    <tr><td>Tomás Ibáñez</td><td><span class="badge ok">Sí</span></td><td><input type="radio" name="a0"></td><td><input type="radio" name="a0" checked></td><td><input type="radio" name="a0"></td></tr>
+    <tr><td>Martín Acosta</td><td><span class="badge ok">Sí</span></td><td><input type="radio" name="a1" checked></td><td><input type="radio" name="a1"></td><td><input type="radio" name="a1"></td></tr>
+  </table>
+  <div class="btn-row">
+    <a class="btn" href="profesor-ok-alerta.html">Guardar cambios</a>
+  </div>
+  <p class="note">La ausencia justificada cubre casos como el préstamo a otra institución. Una ausencia sin justificar suma uno al contador de ausencias consecutivas de esa inscripción, hasta cinco. Una presencia o una ausencia justificada lo vuelve a cero. Un socio no habilitado se puede marcar igual, el sistema solo lo señala.</p>
+</main>
+<footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

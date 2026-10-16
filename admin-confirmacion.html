@@ -2,39 +2,47 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Confirmación de alta, Administrativa</title>
+<title>Confirmación de alta, Club RN</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
   <a class="back-link" href="administrativa.html">&larr; Administrativa general</a>
-  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">3</span></a>
+  <a class="notif-link" href="notificaciones-admin.html">Notificaciones <span class="unread-count">2</span></a>
 </header>
 <main>
-  <h1>Confirmación de alta y creación de perfil <span class="tag-hu">HU 3</span></h1>
+  <h1>Confirmación de alta y creación de perfil</h1>
   <div class="card">
     <h2 style="margin-top:0;">Franco Gómez</h2>
     <div class="grid-2">
       <div>
-        <p><strong>Tipo y número de documento:</strong> DNI 44123456</p>
-        <p><strong>Fecha de nacimiento:</strong> 03/04/2010 (16 años)</p>
-        <p><strong>Teléfono:</strong> 1155-778899</p>
-        <p><strong>Mail:</strong> franco.gomez@mail.com</p>
+        <p><strong>Documento</strong> DNI 44123456</p>
+        <p><strong>Fecha de nacimiento</strong> 03/04/2010, cumple 16 en 2026</p>
+        <p><strong>Teléfono</strong> 1155-778899</p>
+        <p><strong>Mail</strong> franco.gomez@mail.com</p>
       </div>
       <div>
-        <p><strong>Disciplina:</strong> Vóley Cadetes</p>
-        <p><strong>Federado:</strong> No</p>
-        <p><strong>Tutor:</strong> Laura Gómez (madre)</p>
-        <p><strong>Declaración jurada de salud:</strong> Sin observaciones</p>
+        <p><strong>Disciplina</strong> Vóley Cadetes, jueves 18:00 a 19:30</p>
+        <p><strong>Tutora</strong> Laura Gómez (madre), DNI 25998877</p>
+        <p><strong>Declaración jurada de salud</strong> Sin observaciones</p>
       </div>
     </div>
   </div>
-  <div class="btn-row">
-    <a class="btn" href="#">Aprobar alta</a>
-    <a class="btn secondary" href="#">Rechazar</a>
-    <a class="btn outline" href="admin-pendientes.html">Volver al listado</a>
-  </div>
-  <p class="note">Al aprobar, el sistema genera credenciales (usuario DNI44123456) y las envía por mail. El socio queda registrado en el padrón.</p>
+  <form>
+    <div class="grid-2">
+      <div class="field"><label>Aprobar como</label><select><option>Activa</option><option>Becada</option></select></div>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="admin-ok-alta.html">Aprobar alta</a>
+      <a class="btn outline" href="admin-pendientes.html">Volver al listado</a>
+    </div>
+    <h2>Rechazar</h2>
+    <div class="field"><label>Motivo del rechazo</label><textarea rows="2">La fecha de nacimiento no coincide con la del DNI que presentaste en el club.</textarea></div>
+    <div class="btn-row">
+      <a class="btn secondary" href="admin-rechazo.html">Rechazar y avisar por mail</a>
+    </div>
+  </form>
+  <p class="note">Al aprobar, el sistema genera las credenciales (usuario DNI44123456) y las envía por mail. Si la membresía queda activa, genera en ese momento la cuota del mes en curso por el mes completo. Si se rechaza, la membresía sigue pendiente de alta hasta que el potencial socio corrija sus datos.</p>
 </main>
 <footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>
 </body>

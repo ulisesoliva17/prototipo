@@ -2,33 +2,26 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Historial financiero, Tesorero</title>
+<title>Historial financiero, Club RN</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
   <a class="back-link" href="tesorero.html">&larr; Tesorero</a>
-  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">2</span></a>
+  <a class="notif-link" href="notificaciones-tesorero.html">Notificaciones <span class="unread-count">1</span></a>
 </header>
 <main>
-  <h1>Consulta del historial financiero de un socio <span class="tag-hu">HU 30</span></h1>
+  <h1>Consulta del historial financiero de un socio</h1>
   <div class="grid-2">
-    <div class="field">
-      <label>Buscar socio por documento o nombre y apellido</label>
-      <input type="text" value="Franco Gómez">
-    </div>
-    <div class="field">
-      <label>Rango de períodos</label>
-      <input type="text" value="Marzo 2026 — Septiembre 2026">
-    </div>
+    <div class="field"><label>Buscar socio por documento o nombre y apellido</label><input type="text" value="Franco Gómez"></div>
+    <div class="field"><label>Rango de períodos</label><input type="text" value="Marzo 2026 a septiembre 2026"></div>
   </div>
   <table>
-    <tr><th>Período</th><th>Monto</th><th>Estado</th><th>Pago</th></tr>
-    <tr><td>Marzo 2026</td><td>$ 15.000</td><td><span class="badge ok">Saldada</span></td><td>05/03/2026, $ 15.000</td></tr>
-    <tr><td>Abril 2026</td><td>$ 15.000</td><td><span class="badge ok">Saldada</span></td><td>03/04/2026, $ 15.000</td></tr>
-    <tr><td>Mayo 2026</td><td>$ 16.000</td><td><span class="badge warn">No saldada</span></td><td>—</td></tr>
+    <tr><th>Período</th><th>Monto</th><th>Vence</th><th>Estado</th><th>Pago</th></tr>
+    <tr><td>Septiembre 2026</td><td>$ 20.000</td><td>27/09/2026</td><td><span class="badge warn">No saldada</span></td><td>Sin pago</td></tr>
   </table>
-  <p><strong>Total adeudado en el rango:</strong> $ 16.000</p>
+  <p><strong>Total adeudado en el rango</strong> $ 20.000</p>
+  <p class="note">Franco se dio de alta el 18/09/2026. Su primera cuota se generó ese día por el mes completo, la membresía más vóley Cadetes, con el mismo plazo de vencimiento que las demás.</p>
 </main>
 <footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>
 </body>

@@ -2,31 +2,28 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Registrar socio potencial, Profesor</title>
+<title>Registrar socio potencial, Club RN</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
   <a class="back-link" href="profesor.html">&larr; Profesor</a>
-  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">1</span></a>
+  <a class="notif-link" href="notificaciones-profesor.html">Notificaciones</a>
 </header>
 <main>
-  <h1>Registro de socio potencial y envío de link <span class="tag-hu">HU 9</span></h1>
+  <h1>Registro de socio potencial y envío de link</h1>
   <form>
     <div class="grid-2">
-      <div class="field"><label>Tipo y número de documento</label><input type="text" placeholder="DNI 48001122"></div>
-      <div class="field"><label>Nombre y apellido</label><input type="text" placeholder="Nuevo jugador"></div>
-      <div class="field"><label>Contacto (teléfono o mail)</label><input type="text" placeholder="mail@ejemplo.com"></div>
-      <div class="field">
-        <label>Disciplina</label>
-        <select><option>Handball</option><option>Vóley</option><option>Vóley y Handball</option></select>
-      </div>
+      <div class="field"><label>Tipo de documento</label><select><option>DNI</option><option>Pasaporte</option></select></div>
+      <div class="field"><label>Número de documento</label><input type="text" value="48001122"></div>
+      <div class="field"><label>Nombre y apellido</label><input type="text" value="Mica Herrera"></div>
+      <div class="field"><label>Contacto (mail)</label><input type="text" value="mica.herrera@mail.com"></div>
     </div>
     <div class="btn-row">
-      <button class="btn" type="button">Registrar y enviar link</button>
+      <a class="btn" href="profesor-ok-link.html">Registrar y enviar link</a>
     </div>
   </form>
-  <p class="note">El sistema crea el registro en estado "socio potencial", envía el enlace de registro al contacto y notifica a la Administrativa general.</p>
+  <p class="note">El sistema crea la membresía en estado "socio potencial" y la registra sin asignación de cargo, porque la carga un profesor. Le envía al contacto el enlace al formulario de registro y avisa a la Administrativa general. La disciplina, la fecha de nacimiento y la declaración jurada las completa el potencial socio en el formulario.</p>
 </main>
 <footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>
 </body>

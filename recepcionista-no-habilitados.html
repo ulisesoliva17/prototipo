@@ -2,27 +2,22 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Socios no habilitados, Recepcionista</title>
+<title>No habilitados, Club RN</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
   <a class="back-link" href="recepcionista.html">&larr; Recepcionista</a>
-  <a class="notif-link" href="notificaciones.html">Notificaciones <span class="unread-count">1</span></a>
+  <a class="notif-link" href="notificaciones-recepcionista.html">Notificaciones</a>
 </header>
 <main>
-  <h1>Listado de socios no habilitados <span class="tag-hu">HU 7</span></h1>
-  <p class="note">Consulta calculada en el momento. Un socio aparece aquí si su certificado está vencido o si el dictamen es no apto.</p>
+  <h1>Listado de socios no habilitados</h1>
+  <p class="note">Consulta calculada en el momento. Un socio aparece acá si su certificado es no apto, si está vencido o si no tiene un seguro deportivo vigente. Puede fallar más de una condición.</p>
   <table>
-    <tr><th>Nombre y apellido</th><th>Documento</th><th>Disciplina / Categoría</th><th>Motivo</th></tr>
-    <tr>
-      <td>Julieta Ríos</td><td>DNI 45102233</td><td>Vóley Infantiles</td>
-      <td><span class="badge warn">Certificado vencido</span></td>
-    </tr>
-    <tr>
-      <td>Bruno Farías</td><td>DNI 40887711</td><td>Handball Cadetes</td>
-      <td><span class="badge warn">Dictamen no apto</span></td>
-    </tr>
+    <tr><th>Nombre y apellido</th><th>Documento</th><th>Disciplina, categoría y horario</th><th>Motivo</th></tr>
+    <tr><td>Julieta Ríos</td><td>DNI 45102233</td><td>Vóley Infantiles, jueves 17:00 a 18:30</td><td><span class="badge warn">Certificado vencido</span></td></tr>
+    <tr><td>Bruno Farías</td><td>DNI 40887711</td><td>Handball Cadetes, viernes 18:00 a 19:30</td><td><span class="badge warn">Dictamen no apto</span></td></tr>
+    <tr><td>Agustina Paz</td><td>DNI 46220198</td><td>Vóley Cadetes, martes 18:00 a 19:30</td><td><span class="badge warn">Certificado vencido</span> <span class="badge warn">Sin seguro deportivo vigente</span></td></tr>
   </table>
 </main>
 <footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>

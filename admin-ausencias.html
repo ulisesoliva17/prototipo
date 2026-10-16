@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ausencias prolongadas, Club RN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="administrativa.html">&larr; Administrativa general</a>
+  <a class="notif-link" href="notificaciones-admin.html">Notificaciones <span class="unread-count">2</span></a>
+</header>
+<main>
+  <h1>Listado de socios con ausencias prolongadas</h1>
+  <p class="note">Inscripciones cuyo contador de ausencias consecutivas llegó a 5. Después de la alerta el club le pregunta al socio qué pasa. Si justificó y sigue, se reinicia el contador. Si no sigue, se da de baja la inscripción. Si no responde en siete días, el sistema avisa a la Administrativa general.</p>
+  <table>
+    <tr><th>Nombre y apellido</th><th>Disciplina y horario</th><th>Ausencias</th><th>Última asistencia</th><th>Alerta</th><th>Aviso de sin respuesta</th><th></th></tr>
+    <tr><td>Tomás Ibáñez</td><td>Handball Cadetes, miércoles 18:00 a 19:30</td><td>5</td><td>12/08/2026</td><td>16/09/2026</td><td>El 23/09/2026 si no responde</td><td><a class="btn outline" href="admin-ok-contador.html">Justificó, reiniciar contador</a> <a class="btn outline" href="admin-ok-baja-ausencias.html">No sigue, dar de baja</a></td></tr>
+    <tr><td>Ezequiel Luna</td><td>Handball Juveniles, viernes 19:30 a 21:00</td><td>5</td><td>07/08/2026</td><td>04/09/2026</td><td>Enviado el 11/09/2026</td><td><a class="btn outline" href="admin-ok-contador.html">Justificó, reiniciar contador</a> <a class="btn outline" href="admin-ok-baja-ausencias.html">No sigue, dar de baja</a></td></tr>
+  </table>
+</main>
+<footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

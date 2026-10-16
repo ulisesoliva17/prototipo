@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reinscripción, Club RN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="socio.html">&larr; Socio</a>
+  <a class="notif-link" href="notificaciones-socio.html">Notificaciones <span class="unread-count">2</span></a>
+</header>
+<main>
+  <h1>Reinscripción por cambio de categoría</h1>
+  <p class="note">Ejemplo del 01/01/2027. Al empezar el año el sistema cerró las inscripciones de Tomás en Cadetes, porque por su año de nacimiento (2010) ahora le corresponde Juveniles.</p>
+  <div class="card">
+    <p><span class="badge warn">Sin leer</span> <strong>Cambio de categoría</strong>, 01/01/2027</p>
+    <p>Pasaste de Cadetes a Juveniles en vóley y en handball. Elegí un horario de tu categoría nueva para volver a figurar en las listas de asistencia.</p>
+  </div>
+  <form>
+    <div class="card">
+      <label style="display:flex;gap:8px;align-items:center;font-size:14px;"><input type="checkbox" name="r1" style="width:auto;" checked><span><strong>Vóley</strong>, categoría Juveniles</span></label>
+      <div style="margin:10px 0 0 24px;">
+        <label style="display:flex;gap:8px;align-items:center;font-size:14px;"><input type="radio" name="rv" style="width:auto;" checked><span>Martes de 19:30 a 21:00, quedan 11 lugares</span></label>
+        <label style="display:flex;gap:8px;align-items:center;font-size:14px;color:#999;"><input type="radio" name="rv" style="width:auto;" disabled><span>Jueves de 19:30 a 21:00 <span class="badge">Lleno</span></span></label>
+      </div>
+    </div>
+    <div class="card">
+      <label style="display:flex;gap:8px;align-items:center;font-size:14px;"><input type="checkbox" name="r2" style="width:auto;" checked><span><strong>Handball</strong>, categoría Juveniles</span></label>
+      <div style="margin:10px 0 0 24px;">
+        <label style="display:flex;gap:8px;align-items:center;font-size:14px;"><input type="radio" name="rh" style="width:auto;" checked><span>Viernes de 19:30 a 21:00, quedan 9 lugares</span></label>
+      </div>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="socio-ok-reinscripcion.html">Confirmar reinscripción</a>
+    </div>
+  </form>
+  <p class="note">Cada inscripción nueva arranca como no federada y con el contador de ausencias en cero. Si te reinscribís después de generada la cuota del mes, ese mes se suma entero a la cuota siguiente. Hasta que te reinscribas no figurás en ninguna lista de asistencia.</p>
+</main>
+<footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Inscripción y baja, Club RN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="administrativa.html">&larr; Administrativa general</a>
+  <a class="notif-link" href="notificaciones-admin.html">Notificaciones <span class="unread-count">2</span></a>
+</header>
+<main>
+  <h1>Inscripción y baja de disciplinas</h1>
+  <div class="field">
+    <label>Buscar socio por documento o nombre y apellido</label>
+    <input type="text" value="Franco Gómez">
+  </div>
+  <h2>Inscripciones de Franco Gómez</h2>
+  <table>
+    <tr><th>Disciplina</th><th>Categoría</th><th>Horario</th><th>Desde</th><th>Federado</th><th></th></tr>
+    <tr><td>Vóley</td><td>Cadetes</td><td>Jueves 18:00 a 19:30</td><td>14/09/2026</td><td>No</td><td><a class="btn outline" href="admin-ok-federado.html">Marcar federado</a> <a class="btn outline" href="admin-ok-baja-inscripcion.html">Dar de baja</a></td></tr>
+  </table>
+  <h2>Inscribir en otra disciplina</h2>
+  <form>
+    <div class="grid-2">
+      <div class="field"><label>Disciplina</label><select><option>Handball</option></select></div>
+      <div class="field"><label>Categoría (por año de nacimiento)</label><input type="text" value="Cadetes"></div>
+    </div>
+    <div class="card">
+      <label style="display:flex;gap:8px;align-items:center;font-size:14px;"><input type="radio" name="ih" style="width:auto;" checked><span>Miércoles de 18:00 a 19:30, quedan 6 lugares</span></label>
+      <label style="display:flex;gap:8px;align-items:center;font-size:14px;color:#999;"><input type="radio" name="ih" style="width:auto;" disabled><span>Viernes de 18:00 a 19:30 <span class="badge">Lleno</span></span></label>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="admin-ok-inscripcion.html">Inscribir</a>
+    </div>
+  </form>
+  <p class="note">La inscripción y la baja las hace el club a pedido del socio. La baja no borra la inscripción, la cierra. El federado se marca cuando la Federación lo confirma y vale por un año, porque al empezar cada año todas las inscripciones vigentes pasan a no federadas.</p>
+</main>
+<footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>

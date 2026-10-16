@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tarifas, Club RN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="back-link" href="tesorero.html">&larr; Tesorero</a>
+  <a class="notif-link" href="notificaciones-tesorero.html">Notificaciones <span class="unread-count">1</span></a>
+</header>
+<main>
+  <h1>Tarifas</h1>
+  <h2>Tarifas vigentes</h2>
+  <table>
+    <tr><th>Tarifa</th><th>Monto</th><th>Desde</th></tr>
+    <tr><td>Membresía</td><td>$ 12.000</td><td>01/03/2026</td></tr>
+    <tr><td>Vóley Infantiles</td><td>$ 6.000</td><td>01/03/2026</td></tr>
+    <tr><td>Vóley Menores</td><td>$ 6.000</td><td>01/03/2026</td></tr>
+    <tr><td>Vóley Cadetes</td><td>$ 8.000</td><td>01/03/2026</td></tr>
+    <tr><td>Vóley Juveniles</td><td>$ 8.000</td><td>01/03/2026</td></tr>
+    <tr><td>Vóley Maxivóley</td><td>$ 7.000</td><td>01/03/2026</td></tr>
+    <tr><td>Handball Cadetes</td><td>$ 10.000</td><td>01/03/2026</td></tr>
+    <tr><td>Handball Juveniles</td><td>$ 10.000</td><td>01/03/2026</td></tr>
+    <tr><td>Handball Primera</td><td>$ 10.000</td><td>01/03/2026</td></tr>
+  </table>
+  <h2>Cambiar un valor</h2>
+  <form>
+    <div class="grid-2">
+      <div class="field"><label>Tarifa</label><select><option>Membresía</option><option>Vóley Cadetes</option><option>Handball Cadetes</option></select></div>
+      <div class="field"><label>Monto nuevo</label><input type="text" value="13000"></div>
+      <div class="field"><label>Desde</label><input type="text" value="01/10/2026"></div>
+    </div>
+    <div class="btn-row"><a class="btn" href="tesorero-ok-tarifa.html">Guardar</a></div>
+  </form>
+  <h2>Historial de la membresía</h2>
+  <table>
+    <tr><th>Monto</th><th>Desde</th><th>Hasta</th></tr>
+    <tr><td>$ 12.000</td><td>01/03/2026</td><td>Vigente</td></tr>
+    <tr><td>$ 10.000</td><td>01/03/2025</td><td>28/02/2026</td></tr>
+  </table>
+  <p class="note">Al cambiar un valor se cierra la tarifa vigente y se crea una nueva, así queda el historial. Las cuotas ya generadas no cambian. La cuota de cada mes es la membresía más la tarifa de la categoría de cada inscripción.</p>
+</main>
+<footer class="footnote">Club RN, mockup estático sin backend, con fines ilustrativos.</footer>
+</body>
+</html>
